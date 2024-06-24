@@ -10,6 +10,11 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_svg: ^2.0.10+1
+  intl: ^0.19.0
+  carousel_slider: ^4.2.1
+  google_fonts: ^6.2.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -17,3 +22,31 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  fonts: 
+    - family: BeVietnamPro
+      fonts:
+        - asset: assets/fonts/BeVietnamPro-Black.ttf
+        - asset: assets/fonts/BeVietnamPro-BlackItalic.ttf
+        - asset: assets/fonts/BeVietnamPro-Bold.ttf
+        - asset: assets/fonts/BeVietnamPro-BoldItalic.ttf
+        - asset: assets/fonts/BeVietnamPro-ExtraBold.ttf
+        - asset: assets/fonts/BeVietnamPro-ExtraBoldItalic.ttf
+        - asset: assets/fonts/BeVietnamPro-ExtraLight.ttf
+        - asset: assets/fonts/BeVietnamPro-ExtraLightItalic.ttf
+        - asset: assets/fonts/BeVietnamPro-Italic.ttf
+        - asset: assets/fonts/BeVietnamPro-Light.ttf
+        - asset: assets/fonts/BeVietnamPro-LightItalic.ttf
+        - asset: assets/fonts/BeVietnamPro-Medium.ttf
+        - asset: assets/fonts/BeVietnamPro-MediumItalic.ttf
+        - asset: assets/fonts/BeVietnamPro-Regular.ttf
+        - asset: assets/fonts/BeVietnamPro-SemiBold.ttf
+        - asset: assets/fonts/BeVietnamPro-SemiBoldItalic.ttf
+        - asset: assets/fonts/BeVietnamPro-Thin.ttf
+        - asset: assets/fonts/BeVietnamPro-ThinItalic.ttf
+  
+  assets:
+    - assets/vectors/
+    - assets/images/
+    - assets/files/
+    - assets/fonts/
