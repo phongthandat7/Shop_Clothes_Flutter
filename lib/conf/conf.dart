@@ -10,7 +10,6 @@ const white = Color.fromARGB(255, 255, 255, 255);
 const grey = Color.fromARGB(255, 204, 204, 204);
 const lightblue = Color.fromARGB(255, 32, 90, 138);
 
-
 const appBarTS = TextStyle(
     fontSize: 24,
     color: black,
