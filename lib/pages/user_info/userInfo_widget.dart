@@ -11,7 +11,7 @@ class _UserInfoWidgetState extends State<UserInfoWidget> {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('User Info page'),
+      child: Text('User info page'),
     );
   }
 }
