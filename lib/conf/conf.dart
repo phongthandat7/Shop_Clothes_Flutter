@@ -8,6 +8,8 @@ const red = Color.fromARGB(255, 197, 47, 65);
 const black = Color.fromARGB(255, 0, 0, 0);
 const white = Color.fromARGB(255, 255, 255, 255);
 const grey = Color.fromARGB(255, 204, 204, 204);
+const lightblue = Color.fromARGB(255, 32, 90, 138);
+
 
 const appBarTS = TextStyle(
     fontSize: 24,
