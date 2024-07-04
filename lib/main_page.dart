@@ -24,6 +24,14 @@ class _MainPageState extends State<MainPage> {
     UserInfoWidget(),
   ];
 
+  static const List<String> _titles = <String>[
+    'TRANG CHỦ',
+    'TÌM KIẾM',
+    'YÊU THÍCH',
+    'GIỎ HÀNG',
+    'THÔNG TIN NGƯỜI DÙNG',
+  ];
+
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -38,17 +46,16 @@ class _MainPageState extends State<MainPage> {
           appBar: AppBar(
             backgroundColor: yellow,
             elevation: 0,
-            title: const Center(
+            title: Center(
                 child: Text(
-              'TRANG CHỦ',
+              _titles[_selectedIndex],
               style: appBarTS,
             )),
             leading: IconButton(
-              onPressed: () {
-                //open menu
-              },
-                icon: const Icon(Icons.menu)
-            ),
+                onPressed: () {
+                  //open menu
+                },
+                icon: const Icon(Icons.menu)),
             actions: [
               IconButton(
                 onPressed: () {

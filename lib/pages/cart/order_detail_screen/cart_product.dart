@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dickies_shop_clothes/screens/Cart/item_cart.dart';
+import 'package:dickies_project/pages/cart/cart_screen/item_cart.dart';
 
 class CartProduct extends StatefulWidget {
   @override

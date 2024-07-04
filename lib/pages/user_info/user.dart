@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyProfileApp());
-}
-
 class MyProfileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,8 +20,7 @@ class UserProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('USER'),
-        leading: const Icon(Icons.menu),
+        title: const Center(child: Text('USER')),
         actions: [
           Padding(
             padding: const EdgeInsets.all(8.0),

@@ -8,6 +8,8 @@ class ItemCart extends StatefulWidget {
   final String size = 'size: M';
   final String quantity = 'quantity: 1';
   final String color = 'color:';
+  final String imagePath =
+      'assets/images/product_1.jpg'; // Added image path variable
 
   @override
   _ItemCartState createState() => _ItemCartState();
@@ -29,7 +31,7 @@ class _ItemCartState extends State<ItemCart> {
             height: 100,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/quanao1.jpg'),
+                image: AssetImage(widget.imagePath), // Use image path variable
                 fit: BoxFit.cover,
               ),
               borderRadius: BorderRadius.circular(5.0),

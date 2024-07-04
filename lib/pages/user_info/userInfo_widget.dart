@@ -1,3 +1,4 @@
+import 'package:dickies_project/pages/user_info/user.dart';
 import 'package:flutter/material.dart';
 
 class UserInfoWidget extends StatefulWidget {
@@ -11,7 +12,7 @@ class _UserInfoWidgetState extends State<UserInfoWidget> {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('User info page'),
+      child: UserProfile(),
     );
   }
 }

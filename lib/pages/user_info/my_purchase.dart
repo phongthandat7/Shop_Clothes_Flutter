@@ -5,7 +5,6 @@ class MyPurchase extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('MY PURCHASE'),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -62,7 +61,8 @@ class PurchaseItem extends StatelessWidget {
                     Text('x1'),
                     Text(
                       'Total: \$35.25',
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.red),
                     ),
                   ],
                 ),
@@ -75,7 +75,8 @@ class PurchaseItem extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {},
                   child: Text('RATE'),
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.yellow),
+                  style:
+                      ElevatedButton.styleFrom(backgroundColor: Colors.yellow),
                 ),
                 ElevatedButton(
                   onPressed: () {},

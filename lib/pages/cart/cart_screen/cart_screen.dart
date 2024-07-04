@@ -1,6 +1,6 @@
-import 'package:dickies_project/pages/cart/Cart/item_cart.dart';
-import 'package:dickies_project/pages/cart/Cart/payment_result.dart';
-import 'package:dickies_project/pages/cart/Cart/discount_banner.dart';
+import 'package:dickies_project/pages/cart/cart_screen/item_cart.dart';
+import 'package:dickies_project/pages/cart/cart_screen/payment_result.dart';
+import 'package:dickies_project/pages/cart/cart_screen/discount_banner.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatefulWidget {

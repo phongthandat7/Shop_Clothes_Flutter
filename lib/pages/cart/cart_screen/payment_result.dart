@@ -1,6 +1,12 @@
+import 'package:dickies_project/pages/cart/order_detail_screen/order_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class PaymentWidget extends StatelessWidget {
+  final String totalText = 'TỔNG CỘNG (bao gồm thuế)';
+  final String totalPrice = '\$104.96';
+  final String originalPrice = '\$154.96';
+  final String paymentButtonText = 'THANH TOÁN';
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -18,18 +24,18 @@ class PaymentWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'TỔNG CỘNG (bao gồm thuế) ',
+                  totalText,
                   style: const TextStyle(
                       color: Colors.black, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(width: 10),
                 Text(
-                  '\$104.96 ',
+                  totalPrice,
                   style: const TextStyle(
                       color: Colors.red, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  '\$154.96',
+                  originalPrice,
                   style: const TextStyle(
                     color: Colors.grey,
                     decoration: TextDecoration.lineThrough,
@@ -40,24 +46,23 @@ class PaymentWidget extends StatelessWidget {
             SizedBox(height: 13),
             ElevatedButton(
               onPressed: () {
-                // Define the action when the button is pressed
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => OrderDetailsScreen()),
+                );
               },
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-                padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                  EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
-                ),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'THANH TOÁN',
+                    paymentButtonText,
                     style: TextStyle(color: Colors.white),
                   ),
                   SizedBox(height: 9.0),
