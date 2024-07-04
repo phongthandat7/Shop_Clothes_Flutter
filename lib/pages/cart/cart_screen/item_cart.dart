@@ -1,3 +1,4 @@
+import 'package:dickies_project/pages/cart/option.dart';
 import 'package:flutter/material.dart';
 
 class ItemCart extends StatefulWidget {
@@ -97,13 +98,7 @@ class _ItemCartState extends State<ItemCart> {
               ],
             ),
           ),
-          IconButton(
-            icon: const Icon(Icons.more_vert, color: Colors.white),
-            onPressed: () {
-              // Thêm logic xử lý khi nhấn nút
-              print('Button pressed');
-            },
-          ),
+          PopupMenuOption(),
         ],
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:dickies_project/pages/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeWidget extends StatefulWidget {
@@ -11,7 +12,7 @@ class _HomeWidgetState extends State<HomeWidget> {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Home page'),
+      child: HomeScreen(),
     );
   }
 }

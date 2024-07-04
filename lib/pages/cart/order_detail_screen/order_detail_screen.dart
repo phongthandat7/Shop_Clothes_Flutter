@@ -1,3 +1,6 @@
+import 'package:dickies_project/pages/cart/cart_screen/cart_screen.dart';
+import 'package:dickies_project/pages/cart/cart_widget.dart';
+
 import 'cart_product.dart';
 import 'package:flutter/material.dart';
 import 'customer_information.dart';
@@ -16,7 +19,7 @@ class OrderDetailsScreen extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            // Handle back action
+            Navigator.pop(context);
           },
         ),
       ),
