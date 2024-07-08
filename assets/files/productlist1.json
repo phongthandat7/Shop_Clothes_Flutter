@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Short Sleeve Work Shirt",
+      "price": 24.99,
+      "quatity": 1,
+      "img": "product_1.jpg",
+      "color": "Màu đen",
+      "size": "M",
+      "status": "Almost Sold Out",
+      "catId": 1,
+      "catName": "Man"
+    },
+    {
+      "id": 2,
+      "name": "Short Sleeve Work Shirt",
+      "price": 24.99,
+      "quatity": 1,
+      "img": "product_1.jpg",
+      "color": "Màu đen",
+      "size": "M",
+      "status": "Almost Sold Out",
+      "catId": 1,
+      "catName": "Man"
+    },
+    {
+      "id": 3,
+      "name": "Short Sleeve Work Shirt",
+      "price": 24.99,
+      "quatity": 1,
+      "img": "product_1.jpg",
+      "color": "Màu đen",
+      "size": "M",
+      "status": "Almost Sold Out",
+      "catId": 1,
+      "catName": "Man"
+    },
+    {
+      "id": 4,
+      "name": "Short Sleeve Work Shirt",
+      "price": 24.99,
+      "quatity": 1,
+      "img": "product_1.jpg",
+      "color": "Màu đen",
+      "size": "M",
+      "status": "Available",
+      "catId": 1,
+      "catName": "Man"
+    },
+    {
+      "id": 5,
+      "name": "Short Sleeve Work Shirt",
+      "price": 24.99,
+      "quatity": 1,
+      "img": "product_1.jpg",
+      "color": "Màu đen",
+      "size": "M",
+      "status": "Available",
+      "catId": 1,
+      "catName": "Man"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ class ProductModel {
   String? name;
   double? price;
   String? img;
-  List<String>? colors;
+  String? color;
   String? size;
   String? status;
   int? catId;
@@ -16,7 +16,7 @@ class ProductModel {
       this.name,
       this.price,
       this.img,
-      this.colors,
+      this.color,
       this.size,
       this.status,
       this.catId,
@@ -26,7 +26,7 @@ class ProductModel {
     name = json["name"];
     price = json["price"];
     img = json["img"];
-    colors = List<String>.from(json['colors']);
+    color = json["color"];
     size = json["size"];
     status = json["status"];
     catId = json["catId"];
@@ -38,7 +38,7 @@ class ProductModel {
     data["name"] = name;
     data["price"] = price;
     data["img"] = img;
-    data["colors"] = colors;
+    data["color"] = color;
     data["size"] = size;
     data["status"] = status;
     data["catId"] = catId;

@@ -2,6 +2,7 @@ import 'package:dickies_project/conf/conf.dart';
 import 'package:flutter/material.dart';
 import 'package:dickies_project/data/model/productmodel.dart';
 import 'package:dickies_project/data/data/productdata.dart';
+import 'product_item_list.dart';
 
 class SearchWidget extends StatefulWidget {
   const SearchWidget({super.key});
@@ -35,7 +36,7 @@ class _SearchWidgetState extends State<SearchWidget> {
     _allProducts = await readData.loadData();
     _selectedCategory =
         _allProducts.isNotEmpty ? _allProducts.first.catName : null;
-    _selectedCategory = 'MEN';
+    //_selectedCategory = 'MEN';
     _filteredProductsByCate = _allProducts
         .where((product) => product.catName == _selectedCategory)
         .toList();
@@ -50,6 +51,12 @@ class _SearchWidgetState extends State<SearchWidget> {
     } else {
       _filteredProductsByName = [];
     }
+    setState(() {});
+  }
+
+  void _filterProductsByCategory(String category) {
+    _selectedCategory = category;
+    _filteredProductsByCate = _allProducts.where((product) => product.catName == category).toList();
     setState(() {});
   }
 
@@ -100,6 +107,7 @@ class _SearchWidgetState extends State<SearchWidget> {
               GestureDetector(
                 onTap: () {
                   setState(() {
+                    _filterProductsByCategory('MEN');
                     _selectedCategory = 'MEN';
                   });
                 },
@@ -133,6 +141,7 @@ class _SearchWidgetState extends State<SearchWidget> {
               GestureDetector(
                 onTap: () {
                   setState(() {
+                    _filterProductsByCategory('WOMEN');
                     _selectedCategory = 'WOMEN';
                   });
                 },
@@ -182,8 +191,15 @@ class _SearchWidgetState extends State<SearchWidget> {
                 ),
               ),
           ],
+          
         )),
-
+        if (!_isSearchFocused && _filteredProductsByCate.isNotEmpty)
+        Expanded(
+          flex: 2,
+          child: ProductItemList(products: _filteredProductsByCate)
+          ),
+  // ...
+  // ...        
         // Search input and other widgets...
         SizedBox(height: 8),
       ],

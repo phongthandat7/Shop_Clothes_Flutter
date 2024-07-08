@@ -18,8 +18,8 @@ class ProductItemBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 145,
-      height: 203,
+      width: 180,
+      height: 250,
       clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(),
       child: Column(
@@ -41,11 +41,11 @@ class ProductItemBody extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  width: 135,
-                  height: 135,
+                  width: 160,
+                  height: 160,
                   decoration: ShapeDecoration(
                     image: DecorationImage(
-                      image: NetworkImage(imageUrl),
+                      image: AssetImage(urlimg+imageUrl),
                       fit: BoxFit.fill,
                     ),
                     shape: RoundedRectangleBorder(
@@ -55,7 +55,7 @@ class ProductItemBody extends StatelessWidget {
                 ),
                 const SizedBox(height: 15),
                 Container(
-                  height: 33,
+                  //height: 33,
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   clipBehavior: Clip.antiAlias,
                   decoration: BoxDecoration(),
@@ -65,7 +65,7 @@ class ProductItemBody extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 15,
+                        //height: 15,
                         padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                         decoration: ShapeDecoration(
                           color: Colors.white,
@@ -80,7 +80,7 @@ class ProductItemBody extends StatelessWidget {
                               '\$${price.toStringAsFixed(2)}',
                               style: const TextStyle(
                                 color: Colors.black,
-                                fontSize: 10,
+                                fontSize: 14,
                                 fontFamily: 'Poppins',
                                 fontWeight: FontWeight.w300,
                                 height: 0,
@@ -96,7 +96,7 @@ class ProductItemBody extends StatelessWidget {
                           productName,
                           style: const TextStyle(
                             color: Colors.black,
-                            fontSize: 10,
+                            fontSize: 14,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w600,
                             height: 0,
