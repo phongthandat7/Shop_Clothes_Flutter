@@ -31,7 +31,7 @@ class OrderSummary extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 10,
+            height: 6,
           ),
           Container(
             width: double.infinity,

@@ -1,3 +1,4 @@
+import 'package:dickies_project/components/navigation_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'pages/cart/cart_widget.dart';
@@ -43,6 +44,7 @@ class _MainPageState extends State<MainPage> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+          drawer: NavigationDrawerFlex(),
           appBar: AppBar(
             backgroundColor: yellow,
             elevation: 0,
@@ -51,11 +53,6 @@ class _MainPageState extends State<MainPage> {
               _titles[_selectedIndex],
               style: appBarTS,
             )),
-            leading: IconButton(
-                onPressed: () {
-                  //open menu
-                },
-                icon: const Icon(Icons.menu)),
             actions: [
               IconButton(
                 onPressed: () {

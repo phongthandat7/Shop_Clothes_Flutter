@@ -56,7 +56,8 @@ class _SearchWidgetState extends State<SearchWidget> {
 
   void _filterProductsByCategory(String category) {
     _selectedCategory = category;
-    _filteredProductsByCate = _allProducts.where((product) => product.catName == category).toList();
+    _filteredProductsByCate =
+        _allProducts.where((product) => product.catName == category).toList();
     setState(() {});
   }
 
@@ -191,17 +192,16 @@ class _SearchWidgetState extends State<SearchWidget> {
                 ),
               ),
           ],
-          
         )),
-        if (!_isSearchFocused && _filteredProductsByCate.isNotEmpty)
-        Expanded(
-          flex: 2,
-          child: ProductItemList(products: _filteredProductsByCate)
-          ),
-  // ...
-  // ...        
-        // Search input and other widgets...
-        SizedBox(height: 8),
+        //       if (!_isSearchFocused && _filteredProductsByCate.isNotEmpty)
+        //       Expanded(
+        //         flex: 2,
+        //         child: ProductItemList(products: _filteredProductsByCate)
+        //         ),
+        // // ...
+        // // ...
+        //       // Search input and other widgets...
+        //       SizedBox(height: 8),
       ],
     );
   }

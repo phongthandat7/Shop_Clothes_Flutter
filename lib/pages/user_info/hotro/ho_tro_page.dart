@@ -1,4 +1,4 @@
-import 'package:dickies_project/pages/chinhsachhotro/chinhsach_page.dart';
+import 'package:dickies_project/pages/user_info/chinhsachhotro/chinhsach_page.dart';
 import 'package:flutter/material.dart';
 
 class HotroPage extends StatelessWidget {

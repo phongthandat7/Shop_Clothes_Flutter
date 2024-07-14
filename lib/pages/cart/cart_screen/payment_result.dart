@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 class PaymentWidget extends StatelessWidget {
   final String totalText = 'TỔNG CỘNG (bao gồm thuế)';
   final String totalPrice = '\$104.96';
-  final String originalPrice = '\$154.96';
   final String paymentButtonText = 'THANH TOÁN';
 
   @override
@@ -33,13 +32,6 @@ class PaymentWidget extends StatelessWidget {
                   totalPrice,
                   style: const TextStyle(
                       color: Colors.red, fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  originalPrice,
-                  style: const TextStyle(
-                    color: Colors.grey,
-                    decoration: TextDecoration.lineThrough,
-                  ),
                 ),
               ],
             ),

@@ -1,3 +1,4 @@
+import 'package:dickies_project/components/item.product.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -32,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
             ElevatedButton(
-              onPressed: null,
+              onPressed: () {},
               child: const Text('SHIRTS'),
             ),
             ElevatedButton(
@@ -43,7 +44,19 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         Expanded(
           child: Center(
-            child: Text('Content goes here'),
+            child: ListView.builder(
+              itemCount: fakeProducts.length,
+              itemBuilder: (context, index) {
+                return ProductItem(
+                  imageUrl: fakeProducts[index].imageUrl,
+                  title: fakeProducts[index].title,
+                  minPrice: fakeProducts[index].minPrice,
+                  maxPrice: fakeProducts[index].maxPrice,
+                  colorOptions: fakeProducts[index].colorOptions,
+                  isFavorite: fakeProducts[index].isFavorite,
+                );
+              },
+            ),
           ),
         ),
       ],

@@ -57,11 +57,13 @@ class DiscountBanner extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text(
-                          'BUY NOW',
-                          style: TextStyle(color: Colors.white),
+                        Expanded(
+                          child: Text(
+                            'BUY NOW',
+                            style: TextStyle(color: Colors.white),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
-                        SizedBox(width: 8.0),
                         Icon(
                           Icons.arrow_forward,
                           color: Colors.white,

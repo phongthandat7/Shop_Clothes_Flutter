@@ -1,4 +1,4 @@
-import 'package:dickies_project/pages/coupons/doi_voucher/doi_voucher_page.dart';
+import 'package:dickies_project/pages/user_info/coupons/doi_voucher/doi_voucher_page.dart';
 import 'package:flutter/material.dart';
 
 class Item extends StatelessWidget {

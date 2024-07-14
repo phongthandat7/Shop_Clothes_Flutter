@@ -15,10 +15,10 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          height: 100,
-          child: DiscountBanner(),
-        ),
+        // Container(
+        //   height: 100,
+        //   child: DiscountBanner(),
+        // ),
         // SizedBox(height: 10),
         Expanded(
           child: Padding(

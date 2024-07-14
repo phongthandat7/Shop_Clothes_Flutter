@@ -1,4 +1,4 @@
-import 'package:dickies_project/pages/user_info/user.dart';
+import 'package:dickies_project/pages/user_info/personal_inf.dart';
 import 'package:flutter/material.dart';
 
 class UserInfoWidget extends StatefulWidget {
@@ -11,8 +11,8 @@ class UserInfoWidget extends StatefulWidget {
 class _UserInfoWidgetState extends State<UserInfoWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: UserProfile(),
+    return Center(
+      child: Placeholder(),
     );
   }
 }
